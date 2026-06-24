@@ -1,13 +1,13 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { useState } from 'react'
 import { Menu, X } from 'lucide-react'
 
 const links = [
   { href: '/articles', label: 'Articles' },
   { href: '/announcements', label: 'Announcements' },
-  { href: '/creator-stories', label: 'Creator Stories' },
   { href: '/about', label: 'About' },
   { href: '/contact', label: 'Contact' },
 ]
@@ -19,14 +19,19 @@ export default function Nav() {
     <header className="fixed top-0 left-0 right-0 z-50 glass-nav border-b border-white/5">
       <div className="max-w-7xl mx-auto px-5 h-16 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2 group">
-          <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-violet-600 to-pink-600 flex items-center justify-center text-white font-black text-xs">
-            CD
-          </div>
-          <span className="font-bold text-[15px] tracking-tight">
-            <span className="gradient-text">CrowdDirecting</span>
-            <span className="text-white/30 text-xs ml-1">.com</span>
+        <Link href="/" className="flex items-center gap-3 group">
+          <span className="font-bold text-[15px] tracking-tight gradient-text">
+            CrowdDirecting
           </span>
+          <span className="text-white/20 text-xs hidden sm:block">by</span>
+          {/* MultiMuse wordmark */}
+          <Image
+            src="/multimuse-wordmark-white.svg"
+            alt="MultiMuse"
+            width={72}
+            height={18}
+            className="opacity-30 group-hover:opacity-50 transition-opacity hidden sm:block"
+          />
         </Link>
 
         {/* Desktop nav */}
@@ -35,7 +40,7 @@ export default function Nav() {
             <Link
               key={l.href}
               href={l.href}
-              className="text-sm text-white/60 hover:text-white transition-colors duration-200"
+              className="text-sm text-white/55 hover:text-white transition-colors duration-200"
             >
               {l.label}
             </Link>
@@ -48,7 +53,7 @@ export default function Nav() {
             href="https://multimuse.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm px-4 py-1.5 rounded-full bg-gradient-to-r from-violet-600 to-pink-600 text-white font-semibold hover:opacity-90 transition-opacity"
+            className="text-sm px-4 py-1.5 rounded-full bg-gradient-to-r from-[#2D59EC] to-[#7c3aed] text-white font-semibold hover:opacity-90 transition-opacity"
           >
             Visit MultiMuse
           </a>
@@ -81,7 +86,7 @@ export default function Nav() {
             href="https://multimuse.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-2 text-sm px-4 py-2 rounded-full bg-gradient-to-r from-violet-600 to-pink-600 text-white font-semibold text-center"
+            className="mt-2 text-sm px-4 py-2 rounded-full bg-gradient-to-r from-[#2D59EC] to-[#7c3aed] text-white font-semibold text-center"
           >
             Visit MultiMuse
           </a>

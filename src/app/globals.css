@@ -43,16 +43,16 @@ body {
   background: rgba(139, 92, 246, 0.6);
 }
 
-/* Gradient text utility */
+/* Gradient text utility — uses MultiMuse blue (#2D59EC) as anchor */
 .gradient-text {
-  background: linear-gradient(135deg, #a78bfa 0%, #ec4899 55%, #818cf8 100%);
+  background: linear-gradient(135deg, #2D59EC 0%, #7c3aed 40%, #a855f7 70%, #ec4899 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .gradient-text-violet {
-  background: linear-gradient(135deg, #c4b5fd 0%, #a78bfa 50%, #818cf8 100%);
+  background: linear-gradient(135deg, #6ea3ff 0%, #a78bfa 50%, #818cf8 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -93,12 +93,12 @@ body {
   border-color: rgba(139, 92, 246, 0.45);
 }
 
-/* Animated background */
+/* Animated background — MultiMuse blue bleeds in on the left */
 .hero-bg {
   background:
-    radial-gradient(ellipse 70% 50% at 15% 20%, rgba(124, 58, 237, 0.12) 0%, transparent 55%),
-    radial-gradient(ellipse 55% 40% at 85% 75%, rgba(236, 72, 153, 0.08) 0%, transparent 55%),
-    radial-gradient(ellipse 45% 55% at 50% 50%, rgba(59, 130, 246, 0.05) 0%, transparent 65%),
+    radial-gradient(ellipse 70% 50% at 15% 20%, rgba(45, 89, 236, 0.1) 0%, transparent 55%),
+    radial-gradient(ellipse 55% 40% at 85% 75%, rgba(168, 85, 247, 0.08) 0%, transparent 55%),
+    radial-gradient(ellipse 45% 55% at 50% 50%, rgba(45, 89, 236, 0.04) 0%, transparent 65%),
     #050508;
 }
 
