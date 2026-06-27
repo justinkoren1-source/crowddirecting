@@ -154,24 +154,26 @@ export default function Home() {
         </Link>
       </section>
 
-      {/* Latest Posts Grid */}
-      <section className="max-w-7xl mx-auto px-5 py-4 pb-16">
-        <div className="flex items-center justify-between mb-8">
-          <p className="text-white/30 text-xs font-semibold uppercase tracking-widest">Latest</p>
-          <Link
-            href="/articles"
-            className="text-white/35 hover:text-white/60 text-sm transition-colors"
-          >
-            All articles →
-          </Link>
-        </div>
+      {/* Latest Posts Grid — only shown when there are posts beyond the featured */}
+      {latestPosts.length > 0 && (
+        <section className="max-w-7xl mx-auto px-5 py-4 pb-16">
+          <div className="flex items-center justify-between mb-8">
+            <p className="text-white/30 text-xs font-semibold uppercase tracking-widest">Latest</p>
+            <Link
+              href="/articles"
+              className="text-white/35 hover:text-white/60 text-sm transition-colors"
+            >
+              All articles →
+            </Link>
+          </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {latestPosts.map((post) => (
-            <PostCard key={post.slug} post={post} />
-          ))}
-        </div>
-      </section>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {latestPosts.map((post) => (
+              <PostCard key={post.slug} post={post} />
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* Newsletter */}
       <section className="border-t border-white/5">

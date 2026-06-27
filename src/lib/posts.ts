@@ -7,7 +7,7 @@ export type Post = {
   date: string
   readTime: string
   featured: boolean
-  image: string // gradient class or placeholder key
+  image: string
   body?: string
 }
 
@@ -24,244 +24,152 @@ export const categories = [
 
 export const posts: Post[] = [
   {
-    slug: 'why-crowddirecting-changes-the-relationship',
-    title: 'Why CrowdDirecting Changes the Relationship Between Creators and Audiences',
+    slug: 'next-creator-trend-audience-control',
+    title: "The Next Creator Trend Isn't AI. It's Audience Control.",
     excerpt:
-      'For decades, audiences watched from the sidelines. CrowdDirecting turns attention into participation — giving fans a real role in shaping creative decisions.',
-    category: 'CrowdDirecting 101',
+      "For the past few years, the creator economy has been obsessed with one question: how do we make more content? But underneath all of it, there's a bigger shift happening. The internet doesn't just have a content problem anymore. It has a participation problem.",
+    category: 'Culture',
     author: 'The MultiMuse Team',
-    date: 'June 20, 2026',
-    readTime: '6 min read',
+    date: 'June 27, 2026',
+    readTime: '8 min read',
     featured: true,
     image: 'purple-blue',
     body: `
-<p>There is a moment in every piece of content — a film, a series, a music video, an essay — where the creator makes a choice. A character turns left or right. A song goes soft or loud. An ending resolves or stays open.</p>
+<p>For the past few years, the creator economy has been obsessed with one question:</p>
+<p>How do we make more content?</p>
+<p>More posts. More clips. More hooks. More variations. More edits. More AI-generated versions of the same idea.</p>
+<p>And this week, that conversation feels louder than ever. Brands are experimenting with AI influencers. Platforms are building more AI creation tools. Creator-led businesses are raising the stakes. Major events are bringing creators into the centre of sports, entertainment, advertising, and culture.</p>
+<p>But underneath all of it, I think there is a bigger shift happening.</p>
+<p>The internet does not just have a content problem anymore.</p>
+<p>It has a participation problem.</p>
+<p>People are not tired of creators. They are tired of feeling like everything is being made <em>at</em> them.</p>
+<p>They scroll through an endless feed of content that has been optimized, polished, repackaged, A/B tested, generated, sponsored, and fed back to them by an algorithm. Some of it is entertaining. Some of it is useful. Some of it is impressive.</p>
+<p>But a lot of it feels increasingly disconnected.</p>
+<p>And that is where I think the next wave of the creator economy begins.</p>
+<p>Not with more content.</p>
+<p>With more audience control.</p>
 
-<p>For as long as storytelling has existed, that moment has belonged exclusively to the creator. The audience could react. They could love it or hate it. But they could not shape it.</p>
-
-<p><strong>CrowdDirecting changes that moment.</strong></p>
-
-<h2>From Broadcast to Dialogue</h2>
-
-<p>We've been living in the broadcast era of content. Even as social media made creators more accessible, the fundamental relationship remained one-directional. You watch. You react. The creator moves on.</p>
-
-<p>What MultiMuse is building — and what CrowdDirecting describes — is something fundamentally different. A feedback loop where audience participation isn't just tolerated, it's baked into the creative process itself.</p>
-
-<blockquote>"The creator remains the director. But the crowd becomes part of the creative energy."</blockquote>
-
-<p>This isn't about relinquishing control. A great director doesn't take orders from the audience. They listen, they feel the energy of a room, they read what resonates. CrowdDirecting gives creators a new instrument for doing that — at scale, in real time, with data that actually means something.</p>
-
-<h2>Why Now?</h2>
-
-<p>Three things converged to make this possible:</p>
-
+<h2>The AI Flood Is Making Human Input More Valuable</h2>
+<p>AI is not going away. It will be part of every creator's workflow in some way. It will help people write faster, edit faster, brainstorm faster, and produce more with less.</p>
+<p>That part is obvious.</p>
+<p>But the more AI enters the content supply chain, the more audiences will start looking for proof that something real is happening on the other side.</p>
+<p>Not just "was this made by a human?"</p>
+<p>A better question is:</p>
+<p><strong>Did real people shape this?</strong></p>
+<p>That distinction matters.</p>
+<p>Because "human-made" content can still feel passive. A creator talks. The audience watches. The platform measures. The brand optimizes. The loop repeats.</p>
+<p>But CrowdDirecting changes the relationship.</p>
+<p>Instead of the audience only reacting after something is posted, they help direct what happens before it is made.</p>
 <ul>
-<li>Audiences are more participatory than ever — they expect to be part of the conversation</li>
-<li>Creator tools have matured to the point where rapid iteration is possible</li>
-<li>Social platforms have proven that engagement is a core human behavior, not a feature</li>
+<li>They vote on the next scene.</li>
+<li>They choose the outfit.</li>
+<li>They decide the ending.</li>
+<li>They pick the product design.</li>
+<li>They shape the next challenge.</li>
+<li>They influence the creative direction.</li>
+</ul>
+<p>That is not just engagement.</p>
+<p>That is authorship at the audience level.</p>
+
+<h2>Creators Are Becoming Media Companies</h2>
+<p>The old version of the creator economy was about building an audience.</p>
+<p>The new version is about building a world around that audience.</p>
+<p>Creators are not just posting anymore. They are launching brands, shows, products, communities, memberships, events, games, and full media ecosystems.</p>
+<p>That creates a new problem.</p>
+<p>The bigger the creator becomes, the harder it is to keep the audience feeling close to the process.</p>
+<ul>
+<li>A comment section is not enough.</li>
+<li>A like button is not enough.</li>
+<li>A poll in Stories is useful, but it disappears.</li>
+<li>A livestream chat is fun, but chaotic.</li>
+<li>A Discord can be powerful, but often overwhelming.</li>
+</ul>
+<p>Creators need better ways to let their audience participate without losing creative control.</p>
+<p>That is the sweet spot for CrowdDirecting.</p>
+<p>It does not replace the creator's vision. It adds a structured layer of audience input around it.</p>
+<p>The creator still creates.</p>
+<p>But the audience gets to help steer.</p>
+
+<h2>Why This Matters Right Now</h2>
+<p>This week's creator-economy conversation is full of signs pointing in the same direction.</p>
+<p>Brands want creators because creators understand attention better than traditional advertising.</p>
+<p>Platforms want creator-led events because creators can mobilize communities in ways old media often cannot.</p>
+<p>AI is making content production easier, which means the internet is about to become even more crowded.</p>
+<p>And audiences are becoming more skeptical of anything that feels fake, overly polished, or manufactured.</p>
+<p>That combination creates a huge opportunity.</p>
+<p>The winners of the next creator wave will not just be the people who post the most.</p>
+<p>They will be the people who make their audience feel the most involved.</p>
+<p>Because when someone helps shape something, they care more about the outcome.</p>
+<ul>
+<li>They are more likely to come back.</li>
+<li>More likely to share it.</li>
+<li>More likely to defend it.</li>
+<li>More likely to feel ownership over it.</li>
+</ul>
+<p>That is the difference between a viewer and a participant.</p>
+<p>A viewer watches the story.</p>
+<p>A participant feels like they are part of the story.</p>
+
+<h2>CrowdDirecting Is Not a Gimmick</h2>
+<p>It would be easy to reduce CrowdDirecting to voting.</p>
+<p>But voting is only the interface.</p>
+<p>The bigger idea is emotional investment.</p>
+<p>When a creator asks, "Which direction should I take this?" they are doing more than asking for engagement. They are creating a reason for people to return.</p>
+<p>The audience is no longer just wondering, "What did they post?"</p>
+<p>They are wondering:</p>
+<blockquote>"Did my choice win? What did the crowd pick? What are they going to make from it? Did I help shape this?"</blockquote>
+<p>That is a different kind of attention.</p>
+<p>It is not passive consumption. It is anticipation.</p>
+<p>And anticipation is one of the most valuable forces in media.</p>
+<ul>
+<li>It is why people follow reality shows.</li>
+<li>It is why people vote on competitions.</li>
+<li>It is why sports fandom is so powerful.</li>
+<li>It is why group chats explode during live events.</li>
+<li>It is why people care more when they have a stake in what happens next.</li>
+</ul>
+<p>CrowdDirecting brings that same feeling to everyday creation.</p>
+
+<h2>The Feed Is Becoming Too Passive</h2>
+<p>The modern feed trained us to consume quickly.</p>
+<p>Swipe. Like. Scroll. Forget.</p>
+<p>That worked when the internet still felt new. But as content becomes more abundant, passive attention becomes less valuable.</p>
+<p>Creators need deeper signals than likes.</p>
+<ul>
+<li>They need to know what their audience actually wants.</li>
+<li>They need ways to test ideas before making them.</li>
+<li>They need formats that turn casual viewers into recurring participants.</li>
+<li>They need tools that make the creative process feel shared without becoming chaotic.</li>
+</ul>
+<p>CrowdDirecting gives creators a simple question to build around:</p>
+<p><strong>What should happen next?</strong></p>
+<p>That question is powerful because it creates movement.</p>
+<ul>
+<li>It turns content into a decision.</li>
+<li>It turns the audience into collaborators.</li>
+<li>It turns the outcome into something people want to see.</li>
 </ul>
 
-<p>The creator economy proved that people want to support creators directly. CrowdDirecting goes one step further: people want to <em>participate</em> in the creative work itself.</p>
-
-<h2>What This Means for the Future</h2>
-
-<p>We're at the beginning of a new creative format. CrowdDirecting won't replace traditional content. But it will create a new category of entertainment — one where the line between creator and audience is deliberately blurred.</p>
-
-<p>The creators who embrace this earliest will build something no algorithm can replicate: genuine co-ownership between themselves and their communities.</p>
-
-<p>That's not a feature. That's a new kind of relationship.</p>
-    `,
-  },
-  {
-    slug: 'next-era-wont-be-scrolled-it-will-be-shaped',
-    title: 'The Next Era Won\'t Be Scrolled — It Will Be Shaped',
-    excerpt:
-      'Scrolling is passive. The next generation of entertainment demands something more: active participation in the stories we love.',
-    category: 'Culture',
-    author: 'MultiMuse Editorial',
-    date: 'June 18, 2026',
-    readTime: '5 min read',
-    featured: false,
-    image: 'violet-pink',
-    body: `
-<p>Every major shift in entertainment has changed what the audience does with their hands.</p>
-
-<p>Radio required you to gather. Television required you to sit. The internet required you to click. Social media required you to scroll.</p>
-
-<p>The next era requires you to shape.</p>
-
-<h2>The Attention Economy Is Running Out of Attention</h2>
-
-<p>Platforms built on scrolling are facing a reckoning. When everything competes for a finite resource — human attention — the result is an escalating arms race for stimulation. Shorter clips. Louder hooks. More outrage. More noise.</p>
-
-<p>CrowdDirecting offers a different path. Not less engagement, but deeper engagement. Not more content, but more meaningful participation in the content that already matters to people.</p>
-
-<blockquote>"When you vote on what happens next, you don't just watch — you care."</blockquote>
-
-<h2>Participation Changes the Experience</h2>
-
-<p>There's a reason sports fans feel more alive in the stadium than on the couch. Participation — even the feeling of participation — transforms consumption into investment.</p>
-
-<p>CrowdDirecting brings that energy to every creative format. The audience isn't just watching the story unfold. They're part of why it unfolded that way.</p>
-
-<p>This changes what it means to be a fan. And it changes what it means to be a creator.</p>
-    `,
-  },
-  {
-    slug: 'from-passive-fans-to-creative-collaborators',
-    title: 'From Passive Fans to Creative Collaborators',
-    excerpt:
-      'The most loyal communities are built not through consumption, but through creation. Here\'s how CrowdDirecting transforms fandom.',
-    category: 'Creator Stories',
-    author: 'MultiMuse Editorial',
-    date: 'June 15, 2026',
-    readTime: '4 min read',
-    featured: false,
-    image: 'blue-purple',
-    body: `
-<p>Fan communities have always been more than audiences. They write fan fiction. They create art. They theorize, debate, and imagine alternatives. The passion was always there. CrowdDirecting gives it a channel.</p>
-
-<h2>The Collaboration Instinct</h2>
-
-<p>Humans are fundamentally collaborative. We built civilization through shared effort. The entertainment industry spent a century building systems that made audiences passive recipients. But the instinct to participate never went away.</p>
-
-<p>What changes when you give fans a real voice? Everything.</p>
-
+<h2>The Future Is Not Creator Versus Audience</h2>
+<p>A lot of people talk about the creator economy as if creators are the whole story.</p>
+<p>But creators do not build culture alone.</p>
+<p>Culture happens when audiences respond, remix, debate, choose, share, and push ideas forward.</p>
+<p>The creator starts the spark.</p>
+<p>The audience gives it momentum.</p>
+<p>CrowdDirecting is built around that relationship.</p>
+<p>It is not about giving the audience total control. That would make the creator less creative, not more.</p>
+<p>It is about giving the audience meaningful moments of influence.</p>
 <ul>
-<li>Retention increases because fans are invested in outcomes they helped shape</li>
-<li>Communities grow because shared decisions become shared stories</li>
-<li>Creators get real signal — not just likes, but actual choices</li>
+<li>Enough to feel involved.</li>
+<li>Enough to care.</li>
+<li>Enough to come back.</li>
 </ul>
-
-<blockquote>"A vote isn't just data. It's a declaration: I care about this."</blockquote>
-    `,
-  },
-  {
-    slug: 'how-multimuse-turns-voting-into-storytelling',
-    title: 'How MultiMuse Turns Voting Into Storytelling',
-    excerpt:
-      'A deep look at the mechanics behind CrowdDirecting — and why the vote itself is part of the narrative.',
-    category: 'Product Updates',
-    author: 'The MultiMuse Team',
-    date: 'June 12, 2026',
-    readTime: '7 min read',
-    featured: false,
-    image: 'pink-violet',
-    body: `
-<p>At first glance, it might seem simple: give the audience a choice, let them vote, reveal the result. But what MultiMuse has built goes much deeper than a poll.</p>
-
-<h2>The Vote as Story Beat</h2>
-
-<p>In traditional storytelling, a story beat is a meaningful unit of change. Something happens that shifts the state of the narrative. In CrowdDirecting, the vote itself is a story beat.</p>
-
-<p>When an audience sees that 73% of viewers chose Option A, that number becomes part of the shared experience. The reveal is drama. The disagreement is texture. The result is canon.</p>
-
-<blockquote>"The moment of the vote is as cinematic as anything that comes before or after it."</blockquote>
-
-<h2>Creator Control</h2>
-
-<p>Creators on MultiMuse decide what gets voted on, when it gets revealed, and how it shapes the content. The platform is built to preserve creative authority while opening a genuine channel for audience input.</p>
-
-<p>This is the key distinction between CrowdDirecting and chaos. Structure enables freedom. The creator's vision remains the throughline — the audience shapes the texture.</p>
-    `,
-  },
-  {
-    slug: 'why-creators-need-better-feedback-loops',
-    title: 'Why Creators Need Better Feedback Loops',
-    excerpt:
-      'Likes and view counts tell creators almost nothing. The future of creator tools is real signal from real audiences.',
-    category: 'Culture',
-    author: 'MultiMuse Editorial',
-    date: 'June 8, 2026',
-    readTime: '5 min read',
-    featured: false,
-    image: 'purple-blue',
-    body: `
-<p>Ask any creator what they actually want from their audience and they'll give you the same answer: honest feedback. What's working? What isn't? What do people actually care about?</p>
-
-<p>Social media platforms have built enormous infrastructure to capture audience behavior. But almost none of it tells creators what they actually need to know.</p>
-
-<h2>The Signal Problem</h2>
-
-<p>Views tell you how many people started watching. Watch time tells you roughly how many stayed. Comments tell you what the most opinionated fraction of your audience thinks.</p>
-
-<p>None of these tell you what your audience wanted to happen next.</p>
-
-<p>CrowdDirecting creates a new category of signal: intentional input. When an audience member votes on a creative decision, they're communicating something no like or comment can capture — they're revealing what they care about.</p>
-
-<blockquote>"Passive metrics describe what happened. Active votes reveal what matters."</blockquote>
-    `,
-  },
-  {
-    slug: 'rise-of-interactive-entertainment',
-    title: 'The Rise of Interactive Entertainment',
-    excerpt:
-      'From choose-your-own-adventure books to Black Mirror: Bandersnatch — the history of interactive storytelling, and where CrowdDirecting fits.',
-    category: 'CrowdDirecting 101',
-    author: 'MultiMuse Editorial',
-    date: 'June 5, 2026',
-    readTime: '8 min read',
-    featured: false,
-    image: 'blue-pink',
-    body: `
-<p>Interactive storytelling is not new. Choose-your-own-adventure books gave readers agency in the 1970s. Video games built entire industries on it. Black Mirror: Bandersnatch proved Netflix audiences would engage with branching narrative.</p>
-
-<p>But all of these are single-player experiences. One person, one set of choices, one path through the story.</p>
-
-<h2>The Crowd Changes Everything</h2>
-
-<p>CrowdDirecting is something different: collective interactive storytelling. Not one person choosing a path, but thousands of people shaping what happens next — together.</p>
-
-<p>This creates dynamics that don't exist in any other format:</p>
-
-<ul>
-<li>The majority decision becomes the story, but the minority's preference creates tension</li>
-<li>Communities form around shared decisions and outcomes</li>
-<li>The act of voting becomes a social ritual</li>
-</ul>
-
-<blockquote>"It's not your story. It's not the creator's story. It's the community's story."</blockquote>
-
-<h2>What CrowdDirecting Adds</h2>
-
-<p>Where traditional interactive fiction isolates the player in their own path, CrowdDirecting creates shared narrative. Where algorithms decide what you see next, CrowdDirecting gives that power to the audience. Where engagement is measured in passive metrics, CrowdDirecting creates active participation.</p>
-
-<p>This is the next evolution of interactive entertainment. And it's just beginning.</p>
-    `,
-  },
-  {
-    slug: 'building-the-first-crowddirecting-platform',
-    title: 'Building the First CrowdDirecting Platform',
-    excerpt:
-      'A behind-the-scenes look at the vision, decisions, and design principles behind MultiMuse — and the new creative category it\'s defining.',
-    category: 'Behind the Scenes',
-    author: 'The MultiMuse Team',
-    date: 'June 1, 2026',
-    readTime: '6 min read',
-    featured: false,
-    image: 'violet-blue',
-    body: `
-<p>When we started building MultiMuse, we didn't have a name for what we were making. We knew what we wanted to feel: the energy of a live audience, the intimacy of a creator community, the structure of a narrative format, the feedback loop of a real-time platform.</p>
-
-<p>CrowdDirecting is the word we landed on. And it's more than a product name — it's the description of a behavior that's always existed, just without a home.</p>
-
-<h2>The Design Principles</h2>
-
-<p>Every decision in MultiMuse comes back to three principles:</p>
-
-<ul>
-<li><strong>Creator control is sacred.</strong> The platform amplifies creative authority, never undermines it.</li>
-<li><strong>Audience participation is meaningful.</strong> Every vote, signal, and reaction creates real impact on real content.</li>
-<li><strong>The format is the feature.</strong> CrowdDirecting isn't a gimmick — it's a native creative behavior that changes what content can be.</li>
-</ul>
-
-<blockquote>"We're not building a better comment section. We're building a new creative format."</blockquote>
-
-<h2>What Comes Next</h2>
-
-<p>We're still early. The category of CrowdDirecting is new, and the creators who join first are defining what it means. Their experiments, their communities, their creative decisions will shape this platform more than any roadmap we could write.</p>
-
-<p>That's not a bug. That's the whole point.</p>
+<p>The next era of the creator economy will not be defined by who can generate the most content.</p>
+<p>It will be defined by who can create the most meaningful participation.</p>
+<p>Because when everything can be made faster, what becomes rare is not content.</p>
+<p>It is connection.</p>
+<p>And the strongest connection happens when people do not just watch what you make.</p>
+<p>They help shape what happens next.</p>
     `,
   },
 ]
