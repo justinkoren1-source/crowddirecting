@@ -6,14 +6,15 @@ import PostCard from '@/components/PostCard'
 import NewsletterForm from '@/components/NewsletterForm'
 import { getPostBySlug, getLatestPosts, gradientMap, posts } from '@/lib/posts'
 
-type Props = { params: { slug: string } }
+type Props = { params: Promise<{ slug: string }> }
 
 export function generateStaticParams() {
   return posts.map((p) => ({ slug: p.slug }))
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const post = getPostBySlug(params.slug)
+  const { slug } = await params
+  const post = getPostBySlug(slug)
   if (!post) return { title: 'Article Not Found' }
   return {
     title: post.title,
@@ -26,8 +27,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 }
 
-export default function ArticlePage({ params }: Props) {
-  const post = getPostBySlug(params.slug)
+export default async function ArticlePage({ params }: Props) {
+  const { slug } = await params
+  const post = getPostBySlug(slug)
   if (!post) notFound()
 
   const related = getLatestPosts(3).filter((p) => p.slug !== post.slug).slice(0, 3)
@@ -36,7 +38,7 @@ export default function ArticlePage({ params }: Props) {
   return (
     <>
       {/* Hero */}
-      <section className={`relative overflow-hidden`}>
+      <section className="relative overflow-hidden">
         <div className={`absolute inset-0 bg-gradient-to-b ${gradient} opacity-40`} />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#050508]/50 to-[#050508]" />
         <div className="relative max-w-4xl mx-auto px-5 pt-16 pb-14">
@@ -78,10 +80,7 @@ export default function ArticlePage({ params }: Props) {
         </p>
 
         {post.body ? (
-          <div
-            className="article-prose"
-            dangerouslySetInnerHTML={{ __html: post.body }}
-          />
+          <div className="article-prose" dangerouslySetInnerHTML={{ __html: post.body }} />
         ) : (
           <div className="article-prose">
             <p>Full article content coming soon.</p>
@@ -92,9 +91,7 @@ export default function ArticlePage({ params }: Props) {
       {/* CTA strip */}
       <section className="max-w-2xl mx-auto px-5 py-8 mb-8">
         <div className="rounded-2xl border border-violet-500/20 bg-violet-500/8 p-7 text-center">
-          <p className="text-white/60 text-sm mb-2">
-            Join the CrowdDirecting movement
-          </p>
+          <p className="text-white/60 text-sm mb-2">Join the CrowdDirecting movement</p>
           <p className="text-white font-bold text-lg mb-5">
             Shape what happens next on MultiMuse.
           </p>
@@ -102,7 +99,7 @@ export default function ArticlePage({ params }: Props) {
             href="https://multimuse.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-violet-600 to-pink-600 text-white font-semibold text-sm hover:opacity-90 transition-opacity"
+            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-[#2D59EC] to-[#7c3aed] text-white font-semibold text-sm hover:opacity-90 transition-opacity"
           >
             Visit MultiMuse
             <ArrowRight size={14} />
@@ -112,9 +109,7 @@ export default function ArticlePage({ params }: Props) {
 
       {/* Newsletter */}
       <section className="max-w-2xl mx-auto px-5 py-8 border-t border-white/5">
-        <h3 className="text-white font-bold text-lg mb-2">
-          Get the latest from CrowdDirecting.
-        </h3>
+        <h3 className="text-white font-bold text-lg mb-2">Get the latest from CrowdDirecting.</h3>
         <p className="text-white/40 text-sm mb-5">
           Essays, announcements, and creator stories — delivered to your inbox.
         </p>

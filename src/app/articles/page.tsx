@@ -11,12 +11,13 @@ export const metadata: Metadata = {
     'Essays, creator stories, cultural commentary, and deep dives on CrowdDirecting and the future of audience-powered storytelling.',
 }
 
-export default function ArticlesPage({
+export default async function ArticlesPage({
   searchParams,
 }: {
-  searchParams: { category?: string }
+  searchParams: Promise<{ category?: string }>
 }) {
-  const activeCategory = searchParams.category ?? null
+  const { category } = await searchParams
+  const activeCategory = category ?? null
   const featured = getFeaturedPost()
   const featuredGradient = gradientMap[featured.image] ?? 'from-violet-900/50 to-purple-900/40'
 
