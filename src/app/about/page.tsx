@@ -5,7 +5,7 @@ import { ArrowRight } from 'lucide-react'
 export const metadata: Metadata = {
   title: 'About CrowdDirecting',
   description:
-    'CrowdDirecting is a new creative format where audiences help guide what happens next. Learn about the concept, the team, and the movement behind MultiMuse.',
+    'CrowdDirecting is a new creative format where audiences help guide what happens next.',
 }
 
 const principles = [
@@ -17,7 +17,7 @@ const principles = [
   {
     number: '02',
     title: 'Participation Is Meaningful',
-    body: 'This isn\'t polling or commenting. Every vote, reaction, and decision in CrowdDirecting creates real impact on real creative content. When audiences participate, they see the results of their influence.',
+    body: "This isn't polling or commenting. Every vote, reaction, and decision in CrowdDirecting creates real impact on real creative content. When audiences participate, they see the results of their influence.",
   },
   {
     number: '03',
@@ -36,19 +36,14 @@ export default function AboutPage() {
     <>
       {/* Hero */}
       <section className="hero-bg relative overflow-hidden">
-        <div className="pointer-events-none absolute inset-0">
-          <div className="absolute top-1/4 right-1/4 w-96 h-96 rounded-full bg-violet-600/8 blur-3xl" />
-          <div className="absolute bottom-0 left-1/4 w-64 h-64 rounded-full bg-pink-600/6 blur-3xl" />
-        </div>
         <div className="relative max-w-7xl mx-auto px-5 pt-16 pb-20">
-          <p className="text-violet-400 text-xs font-semibold uppercase tracking-widest mb-5">
+          <p className="text-[#2D59EC] text-xs font-semibold uppercase tracking-widest mb-5">
             The Concept
           </p>
-          <h1 className="text-5xl md:text-6xl font-black text-white leading-[1.0] tracking-tight mb-6 max-w-3xl">
-            What is{' '}
-            <span className="gradient-text">CrowdDirecting</span>?
+          <h1 className="text-5xl md:text-6xl font-black text-gray-900 leading-[1.0] tracking-tight mb-6 max-w-3xl">
+            What is <span className="gradient-text">CrowdDirecting</span>?
           </h1>
-          <p className="text-white/50 text-lg md:text-xl leading-relaxed max-w-2xl">
+          <p className="text-gray-500 text-lg md:text-xl leading-relaxed max-w-2xl">
             A new creative format where audiences help guide what happens next.
           </p>
         </div>
@@ -56,14 +51,14 @@ export default function AboutPage() {
 
       {/* Core definition */}
       <section className="max-w-3xl mx-auto px-5 py-16">
-        <div className="space-y-6 text-white/60 text-lg leading-relaxed">
+        <div className="space-y-6 text-gray-600 text-lg leading-relaxed">
           <p>
             For decades, the relationship between creator and audience has been one-directional.
             A creator makes something. An audience experiences it. The feedback loop — if it
             existed at all — was slow, indirect, and rarely changed anything.
           </p>
           <p>
-            <strong className="text-white">CrowdDirecting changes that dynamic.</strong>
+            <strong className="text-gray-900">CrowdDirecting changes that dynamic.</strong>
           </p>
           <p>
             Instead of content being a one-way broadcast, CrowdDirecting creates a feedback loop
@@ -71,23 +66,18 @@ export default function AboutPage() {
             creative choices in real time. The creator remains the director — but the crowd
             becomes part of the creative energy.
           </p>
-          <p>
-            This isn&apos;t polling. It isn&apos;t a comment section. It&apos;s a new creative
-            behavior where audiences help shape content, decisions, characters, outcomes, formats,
-            and creative direction.
-          </p>
-          <blockquote className="border-l-2 border-violet-500 pl-5 py-1 text-violet-300 italic text-xl font-medium">
+          <blockquote className="border-l-2 border-[#2D59EC] pl-5 py-1 text-[#2D59EC] italic text-xl font-medium">
             &ldquo;The creator remains the director. But the crowd becomes part of the creative
             energy.&rdquo;
           </blockquote>
         </div>
       </section>
 
-      {/* What it is NOT */}
+      {/* Is / Is not */}
       <section className="max-w-7xl mx-auto px-5 py-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-          <div className="rounded-2xl border border-white/8 bg-[#0f0f1a] p-7">
-            <h2 className="text-white font-bold text-xl mb-5">
+          <div className="rounded-2xl border border-black/6 bg-white p-7">
+            <h2 className="text-gray-900 font-bold text-xl mb-5">
               CrowdDirecting <span className="text-red-400">is not</span>…
             </h2>
             <ul className="space-y-3">
@@ -99,17 +89,17 @@ export default function AboutPage() {
                 'A gimmick or engagement hack',
                 'Choose-your-own-adventure for one person',
               ].map((item) => (
-                <li key={item} className="flex items-center gap-3 text-white/40 text-sm">
-                  <span className="w-1.5 h-1.5 rounded-full bg-red-500/60 shrink-0" />
+                <li key={item} className="flex items-center gap-3 text-gray-500 text-sm">
+                  <span className="w-1.5 h-1.5 rounded-full bg-red-300 shrink-0" />
                   {item}
                 </li>
               ))}
             </ul>
           </div>
 
-          <div className="rounded-2xl border border-violet-500/20 bg-violet-500/5 p-7">
-            <h2 className="text-white font-bold text-xl mb-5">
-              CrowdDirecting <span className="text-violet-400">is</span>…
+          <div className="rounded-2xl border border-blue-100 bg-blue-50 p-7">
+            <h2 className="text-gray-900 font-bold text-xl mb-5">
+              CrowdDirecting <span className="text-[#2D59EC]">is</span>…
             </h2>
             <ul className="space-y-3">
               {[
@@ -120,8 +110,8 @@ export default function AboutPage() {
                 'A cultural moment — audiences shaping what they love',
                 'The next evolution of creator-fan relationships',
               ].map((item) => (
-                <li key={item} className="flex items-center gap-3 text-white/60 text-sm">
-                  <span className="w-1.5 h-1.5 rounded-full bg-violet-400 shrink-0" />
+                <li key={item} className="flex items-center gap-3 text-gray-600 text-sm">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#2D59EC] shrink-0" />
                   {item}
                 </li>
               ))}
@@ -133,41 +123,38 @@ export default function AboutPage() {
       {/* Principles */}
       <section className="max-w-7xl mx-auto px-5 py-16">
         <div className="text-center mb-12">
-          <p className="text-violet-400 text-xs font-semibold uppercase tracking-widest mb-3">
+          <p className="text-[#2D59EC] text-xs font-semibold uppercase tracking-widest mb-3">
             The Foundation
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-white">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
             Principles of CrowdDirecting
           </h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           {principles.map((p) => (
-            <div key={p.number} className="rounded-2xl glow-border bg-[#0f0f1a] p-7">
-              <span className="gradient-text-violet font-black text-3xl block mb-4">
-                {p.number}
-              </span>
-              <h3 className="text-white font-bold text-lg mb-3">{p.title}</h3>
-              <p className="text-white/45 leading-relaxed text-sm">{p.body}</p>
+            <div key={p.number} className="rounded-2xl border border-black/6 bg-white p-7">
+              <span className="gradient-text font-black text-3xl block mb-4">{p.number}</span>
+              <h3 className="text-gray-900 font-bold text-lg mb-3">{p.title}</h3>
+              <p className="text-gray-500 leading-relaxed text-sm">{p.body}</p>
             </div>
           ))}
         </div>
       </section>
 
       {/* About MultiMuse */}
-      <section className="max-w-3xl mx-auto px-5 py-12 border-t border-white/5">
-        <p className="text-violet-400 text-xs font-semibold uppercase tracking-widest mb-4">
+      <section className="max-w-3xl mx-auto px-5 py-12 border-t border-black/5">
+        <p className="text-[#2D59EC] text-xs font-semibold uppercase tracking-widest mb-4">
           The Platform
         </p>
-        <h2 className="text-2xl md:text-3xl font-bold text-white mb-5">
+        <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-5">
           CrowdDirecting is powered by MultiMuse.
         </h2>
-        <p className="text-white/50 leading-relaxed mb-5">
+        <p className="text-gray-500 leading-relaxed mb-5">
           MultiMuse is the platform that makes CrowdDirecting possible. Built for creators who
-          want to invite their audiences into the creative process — it provides the tools,
-          format, and community infrastructure to turn participation into storytelling.
+          want to invite their audiences into the creative process.
         </p>
-        <p className="text-white/50 leading-relaxed mb-8">
+        <p className="text-gray-500 leading-relaxed mb-8">
           This site — CrowdDirecting.com — is the editorial home for the ideas, culture, and
           conversations around the format. A MultiMuse publication.
         </p>
@@ -176,14 +163,14 @@ export default function AboutPage() {
             href="https://multimuse.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-violet-600 to-pink-600 text-white font-semibold text-sm hover:opacity-90 transition-opacity"
+            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-[#2D59EC] to-[#7c3aed] text-white font-semibold text-sm hover:opacity-90 transition-opacity"
           >
             Visit MultiMuse
             <ArrowRight size={14} />
           </a>
           <Link
             href="/articles"
-            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl border border-white/15 text-white/60 hover:text-white hover:border-white/30 transition-all font-semibold text-sm"
+            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl border border-black/10 text-gray-600 hover:text-gray-900 hover:border-black/20 transition-all font-semibold text-sm bg-white"
           >
             Read the Articles
           </Link>

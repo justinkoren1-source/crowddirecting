@@ -16,21 +16,20 @@ export default function Nav() {
   const [open, setOpen] = useState(false)
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 glass-nav border-b border-white/5">
+    <header className="fixed top-0 left-0 right-0 z-50 glass-nav border-b border-black/5">
       <div className="max-w-7xl mx-auto px-5 h-16 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 group">
           <span className="font-bold text-[15px] tracking-tight gradient-text">
             CrowdDirecting
           </span>
-          <span className="text-white/20 text-xs hidden sm:block">by</span>
-          {/* MultiMuse wordmark */}
+          <span className="text-gray-300 text-xs hidden sm:block">by</span>
           <Image
-            src="/multimuse-wordmark-white.svg"
+            src="/multimuse-wordmark-blue.svg"
             alt="MultiMuse"
             width={72}
             height={18}
-            className="opacity-30 group-hover:opacity-50 transition-opacity hidden sm:block"
+            className="opacity-40 group-hover:opacity-60 transition-opacity hidden sm:block"
           />
         </Link>
 
@@ -40,7 +39,7 @@ export default function Nav() {
             <Link
               key={l.href}
               href={l.href}
-              className="text-sm text-white/55 hover:text-white transition-colors duration-200"
+              className="text-sm text-gray-500 hover:text-gray-900 transition-colors duration-200"
             >
               {l.label}
             </Link>
@@ -61,7 +60,7 @@ export default function Nav() {
 
         {/* Mobile toggle */}
         <button
-          className="md:hidden text-white/70 hover:text-white"
+          className="md:hidden text-gray-500 hover:text-gray-900"
           onClick={() => setOpen(!open)}
           aria-label="Toggle menu"
         >
@@ -71,13 +70,13 @@ export default function Nav() {
 
       {/* Mobile menu */}
       {open && (
-        <div className="md:hidden glass-nav border-t border-white/5 px-5 py-4 flex flex-col gap-3">
+        <div className="md:hidden bg-[#f7f7fb] border-t border-black/5 px-5 py-4 flex flex-col gap-3">
           {links.map((l) => (
             <Link
               key={l.href}
               href={l.href}
               onClick={() => setOpen(false)}
-              className="text-sm text-white/70 hover:text-white transition-colors py-1"
+              className="text-sm text-gray-600 hover:text-gray-900 transition-colors py-1"
             >
               {l.label}
             </Link>

@@ -19,11 +19,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: post.title,
     description: post.excerpt,
-    openGraph: {
-      title: post.title,
-      description: post.excerpt,
-      type: 'article',
-    },
+    openGraph: { title: post.title, description: post.excerpt, type: 'article' },
   }
 }
 
@@ -38,30 +34,30 @@ export default async function ArticlePage({ params }: Props) {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden">
-        <div className={`absolute inset-0 bg-gradient-to-b ${gradient} opacity-40`} />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#050508]/50 to-[#050508]" />
+      <section className="relative overflow-hidden bg-white">
+        <div className={`absolute inset-0 bg-gradient-to-b ${gradient} opacity-20`} />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/60 to-white" />
         <div className="relative max-w-4xl mx-auto px-5 pt-16 pb-14">
           <Link
             href="/articles"
-            className="inline-flex items-center gap-2 text-white/40 hover:text-white/70 text-sm mb-10 transition-colors"
+            className="inline-flex items-center gap-2 text-gray-400 hover:text-gray-700 text-sm mb-10 transition-colors"
           >
             <ArrowLeft size={14} />
             All Articles
           </Link>
 
           <div className="mb-5">
-            <span className="text-xs font-semibold px-3 py-1 rounded-full bg-violet-500/20 text-violet-300 border border-violet-500/25">
+            <span className="text-xs font-semibold px-3 py-1 rounded-full bg-blue-50 text-[#2D59EC] border border-blue-100">
               {post.category}
             </span>
           </div>
 
-          <h1 className="text-3xl md:text-5xl font-black text-white leading-[1.05] tracking-tight mb-6">
+          <h1 className="text-3xl md:text-5xl font-black text-gray-900 leading-[1.05] tracking-tight mb-6">
             {post.title}
           </h1>
 
-          <div className="flex flex-wrap items-center gap-4 text-white/40 text-sm">
-            <span className="font-medium text-white/60">{post.author}</span>
+          <div className="flex flex-wrap items-center gap-4 text-gray-400 text-sm">
+            <span className="font-medium text-gray-600">{post.author}</span>
             <span>·</span>
             <span>{post.date}</span>
             <span>·</span>
@@ -74,8 +70,8 @@ export default async function ArticlePage({ params }: Props) {
       </section>
 
       {/* Article Body */}
-      <article className="max-w-2xl mx-auto px-5 py-12">
-        <p className="text-white/55 text-lg leading-relaxed mb-10 border-l-2 border-violet-600/50 pl-5 italic">
+      <article className="max-w-2xl mx-auto px-5 py-12 bg-white">
+        <p className="text-gray-600 text-lg leading-relaxed mb-10 border-l-2 border-[#2D59EC]/40 pl-5 italic">
           {post.excerpt}
         </p>
 
@@ -90,9 +86,9 @@ export default async function ArticlePage({ params }: Props) {
 
       {/* CTA strip */}
       <section className="max-w-2xl mx-auto px-5 py-8 mb-8">
-        <div className="rounded-2xl border border-violet-500/20 bg-violet-500/8 p-7 text-center">
-          <p className="text-white/60 text-sm mb-2">Join the CrowdDirecting movement</p>
-          <p className="text-white font-bold text-lg mb-5">
+        <div className="rounded-2xl border border-blue-100 bg-blue-50 p-7 text-center">
+          <p className="text-gray-500 text-sm mb-2">Join the CrowdDirecting movement</p>
+          <p className="text-gray-900 font-bold text-lg mb-5">
             Shape what happens next on MultiMuse.
           </p>
           <a
@@ -108,9 +104,11 @@ export default async function ArticlePage({ params }: Props) {
       </section>
 
       {/* Newsletter */}
-      <section className="max-w-2xl mx-auto px-5 py-8 border-t border-white/5">
-        <h3 className="text-white font-bold text-lg mb-2">Get the latest from CrowdDirecting.</h3>
-        <p className="text-white/40 text-sm mb-5">
+      <section className="max-w-2xl mx-auto px-5 py-8 border-t border-black/5">
+        <h3 className="text-gray-900 font-bold text-lg mb-2">
+          Get the latest from CrowdDirecting.
+        </h3>
+        <p className="text-gray-500 text-sm mb-5">
           Essays, announcements, and creator stories — delivered to your inbox.
         </p>
         <NewsletterForm compact />
@@ -118,8 +116,8 @@ export default async function ArticlePage({ params }: Props) {
 
       {/* Related Posts */}
       {related.length > 0 && (
-        <section className="max-w-7xl mx-auto px-5 py-16 border-t border-white/5">
-          <h3 className="text-xl font-bold text-white mb-8">More to Read</h3>
+        <section className="max-w-7xl mx-auto px-5 py-16 border-t border-black/5">
+          <h3 className="text-xl font-bold text-gray-900 mb-8">More to Read</h3>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
             {related.map((p) => (
               <PostCard key={p.slug} post={p} />

@@ -16,35 +16,34 @@ export default function Home() {
       {/* Hero */}
       <section className="hero-bg relative overflow-hidden min-h-[85vh] flex items-center">
         <div className="pointer-events-none absolute inset-0 overflow-hidden">
-          <div className="orb-float orb-pulse absolute top-1/3 left-1/5 w-[500px] h-[500px] rounded-full bg-[#2D59EC]/8 blur-3xl" />
+          <div className="orb-float orb-pulse absolute top-1/3 left-1/5 w-[500px] h-[500px] rounded-full bg-[#2D59EC]/5 blur-3xl" />
           <div
-            className="orb-float orb-pulse absolute bottom-1/4 right-1/4 w-72 h-72 rounded-full bg-purple-600/7 blur-3xl"
+            className="orb-float orb-pulse absolute bottom-1/4 right-1/4 w-72 h-72 rounded-full bg-purple-500/4 blur-3xl"
             style={{ animationDelay: '3s' }}
           />
         </div>
 
         <div className="relative max-w-7xl mx-auto px-5 py-24 md:py-32">
-          {/* MultiMuse attribution */}
           <div className="flex items-center gap-2 mb-8">
-            <span className="text-white/30 text-xs">A publication by</span>
+            <span className="text-gray-400 text-xs">A publication by</span>
             <Image
-              src="/multimuse-wordmark-white.svg"
+              src="/multimuse-wordmark-blue.svg"
               alt="MultiMuse"
               width={80}
               height={20}
-              className="opacity-40"
+              className="opacity-45"
             />
           </div>
 
           <h1 className="text-5xl md:text-7xl lg:text-[86px] font-black leading-[0.93] tracking-tight mb-7 max-w-4xl">
             <span className="gradient-text">CrowdDirecting</span>
             <br />
-            <span className="text-white">is the future</span>
+            <span className="text-gray-900">is the future</span>
             <br />
-            <span className="text-white/50">of storytelling.</span>
+            <span className="text-gray-400">of storytelling.</span>
           </h1>
 
-          <p className="text-white/50 text-lg leading-relaxed max-w-xl mb-10">
+          <p className="text-gray-500 text-lg leading-relaxed max-w-xl mb-10">
             The ideas, creator stories, and cultural commentary behind MultiMuse — the platform
             where audiences help shape what happens next.
           </p>
@@ -61,7 +60,7 @@ export default function Home() {
               href="https://multimuse.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-white/12 text-white/60 hover:text-white hover:border-white/25 transition-all font-semibold text-sm"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-black/10 text-gray-600 hover:text-gray-900 hover:border-black/20 transition-all font-semibold text-sm bg-white"
             >
               Visit MultiMuse
               <ChevronRight size={15} />
@@ -70,10 +69,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* What Is CrowdDirecting? — compact, always visible */}
-      <section className="border-b border-white/5">
+      {/* What Is CrowdDirecting? */}
+      <section className="border-b border-black/5">
         <div className="max-w-7xl mx-auto px-5 py-12">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-white/5 rounded-2xl overflow-hidden">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-black/5 rounded-2xl overflow-hidden">
             {[
               {
                 title: 'Audience Participation',
@@ -88,20 +87,17 @@ export default function Home() {
                 text: 'Every vote, reveal, and decision becomes part of the story itself.',
               },
             ].map((card, i) => (
-              <div
-                key={card.title}
-                className="bg-[#0a0a12] px-7 py-8"
-              >
-                <span className="text-[#2D59EC] font-black text-2xl">0{i + 1}</span>
-                <h3 className="text-white font-bold text-base mt-3 mb-2">{card.title}</h3>
-                <p className="text-white/40 text-sm leading-relaxed">{card.text}</p>
+              <div key={card.title} className="bg-[#f7f7fb] px-7 py-8">
+                <span className="gradient-text font-black text-2xl">0{i + 1}</span>
+                <h3 className="text-gray-900 font-bold text-base mt-3 mb-2">{card.title}</h3>
+                <p className="text-gray-500 text-sm leading-relaxed">{card.text}</p>
               </div>
             ))}
           </div>
           <div className="mt-5 text-center">
             <Link
               href="/about"
-              className="text-white/35 text-sm hover:text-white/60 transition-colors"
+              className="text-gray-400 text-sm hover:text-gray-600 transition-colors"
             >
               Learn more about CrowdDirecting →
             </Link>
@@ -111,42 +107,40 @@ export default function Home() {
 
       {/* Featured Article */}
       <section className="max-w-7xl mx-auto px-5 py-16">
-        <p className="text-white/30 text-xs font-semibold uppercase tracking-widest mb-6">
+        <p className="text-gray-400 text-xs font-semibold uppercase tracking-widest mb-6">
           Featured
         </p>
 
         <Link
           href={`/articles/${featured.slug}`}
-          className="group block rounded-2xl overflow-hidden glow-border card-hover bg-[#0f0f1a]"
+          className="group block rounded-2xl overflow-hidden border border-black/6 card-hover bg-white"
         >
           <div className="grid grid-cols-1 lg:grid-cols-5">
-            <div
-              className={`lg:col-span-2 bg-gradient-to-br ${featuredGradient} relative min-h-[240px]`}
-            >
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[#0f0f1a]/50 hidden lg:block" />
+            <div className={`lg:col-span-2 bg-gradient-to-br ${featuredGradient} relative min-h-[240px]`}>
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent to-black/20 hidden lg:block" />
               <div className="absolute inset-0 flex items-center justify-center opacity-15">
                 <Clapperboard size={100} className="text-white" />
               </div>
               <div className="absolute top-5 left-5">
-                <span className="text-xs font-semibold px-3 py-1 rounded-full bg-white/10 text-white/80 backdrop-blur-sm border border-white/10">
+                <span className="text-xs font-semibold px-3 py-1 rounded-full bg-white/20 text-white backdrop-blur-sm border border-white/20">
                   {featured.category}
                 </span>
               </div>
             </div>
 
             <div className="lg:col-span-3 p-8 md:p-10 flex flex-col justify-center">
-              <div className="flex items-center gap-2 text-white/30 text-xs mb-4">
+              <div className="flex items-center gap-2 text-gray-400 text-xs mb-4">
                 <span>{featured.author}</span>
                 <span>·</span>
                 <span>{featured.date}</span>
                 <span>·</span>
                 <span>{featured.readTime}</span>
               </div>
-              <h2 className="text-xl md:text-2xl font-bold text-white leading-snug mb-4 group-hover:text-[#6ea3ff] transition-colors">
+              <h2 className="text-xl md:text-2xl font-bold text-gray-900 leading-snug mb-4 group-hover:text-[#2D59EC] transition-colors">
                 {featured.title}
               </h2>
-              <p className="text-white/45 leading-relaxed mb-6 text-sm">{featured.excerpt}</p>
-              <div className="inline-flex items-center gap-2 text-[#6ea3ff] font-semibold text-sm group-hover:gap-3 transition-all">
+              <p className="text-gray-500 leading-relaxed mb-6 text-sm">{featured.excerpt}</p>
+              <div className="inline-flex items-center gap-2 text-[#2D59EC] font-semibold text-sm group-hover:gap-3 transition-all">
                 Read article <ArrowRight size={14} />
               </div>
             </div>
@@ -154,19 +148,15 @@ export default function Home() {
         </Link>
       </section>
 
-      {/* Latest Posts Grid — only shown when there are posts beyond the featured */}
+      {/* Latest Posts Grid */}
       {latestPosts.length > 0 && (
         <section className="max-w-7xl mx-auto px-5 py-4 pb-16">
           <div className="flex items-center justify-between mb-8">
-            <p className="text-white/30 text-xs font-semibold uppercase tracking-widest">Latest</p>
-            <Link
-              href="/articles"
-              className="text-white/35 hover:text-white/60 text-sm transition-colors"
-            >
+            <p className="text-gray-400 text-xs font-semibold uppercase tracking-widest">Latest</p>
+            <Link href="/articles" className="text-gray-400 hover:text-gray-600 text-sm transition-colors">
               All articles →
             </Link>
           </div>
-
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {latestPosts.map((post) => (
               <PostCard key={post.slug} post={post} />
@@ -176,27 +166,27 @@ export default function Home() {
       )}
 
       {/* Newsletter */}
-      <section className="border-t border-white/5">
+      <section className="border-t border-black/5">
         <div className="max-w-7xl mx-auto px-5 py-14">
           <div className="max-w-md">
             <div className="flex items-center gap-2 mb-4">
               <Image
-                src="/multimuse-wordmark-white.svg"
+                src="/multimuse-wordmark-blue.svg"
                 alt="MultiMuse"
                 width={70}
                 height={17}
-                className="opacity-35"
+                className="opacity-40"
               />
             </div>
-            <h2 className="text-xl font-bold text-white mb-2">
+            <h2 className="text-xl font-bold text-gray-900 mb-2">
               Stay up to date on CrowdDirecting.
             </h2>
-            <p className="text-white/40 text-sm mb-6 leading-relaxed">
+            <p className="text-gray-500 text-sm mb-6 leading-relaxed">
               Essays, product updates, and creator stories — roughly once a week, from the
               MultiMuse team.
             </p>
             <NewsletterForm />
-            <p className="text-white/20 text-xs mt-3">No spam. Unsubscribe anytime.</p>
+            <p className="text-gray-300 text-xs mt-3">No spam. Unsubscribe anytime.</p>
           </div>
         </div>
       </section>
