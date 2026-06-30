@@ -10,6 +10,7 @@ const geist = Geist({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://crowddirecting.com'),
   title: {
     default: 'CrowdDirecting — The Future of Audience-Powered Storytelling',
     template: '%s | CrowdDirecting',
