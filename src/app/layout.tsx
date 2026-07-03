@@ -6,11 +6,11 @@ import Footer from '@/components/Footer'
 export const metadata: Metadata = {
   metadataBase: new URL('https://crowddirecting.com'),
   title: {
-    default: 'CrowdDirecting — The Future of Audience-Powered Storytelling',
+    default: 'CrowdDirecting — Where Audiences Help Direct What Happens Next',
     template: '%s | CrowdDirecting',
   },
   description:
-    'CrowdDirecting is a new creative format where audiences help shape what happens next. Explore ideas, creator stories, and the movement behind MultiMuse.',
+    'CrowdDirecting is a new creative format where audiences don\'t just consume — they help direct what happens next. Ideas, creator stories, and culture — a publication by MultiMuse.',
   keywords: [
     'CrowdDirecting',
     'interactive storytelling',
@@ -22,15 +22,15 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     siteName: 'CrowdDirecting',
-    title: 'CrowdDirecting — The Future of Audience-Powered Storytelling',
+    title: 'CrowdDirecting — Where Audiences Help Direct What Happens Next',
     description:
-      'Explore the ideas, announcements, and creator stories behind CrowdDirecting — the new creative format where audiences help shape what happens next.',
+      'CrowdDirecting is a new creative format where audiences don\'t just consume — they help direct what happens next. Ideas, creator stories, and culture — a publication by MultiMuse.',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'CrowdDirecting — The Future of Audience-Powered Storytelling',
+    title: 'CrowdDirecting — Where Audiences Help Direct What Happens Next',
     description:
-      'A new creative format where audiences help shape what happens next. A MultiMuse publication.',
+      'CrowdDirecting is a new creative format where audiences don\'t just consume — they help direct what happens next. Ideas, creator stories, and culture — a publication by MultiMuse.',
   },
 }
 
