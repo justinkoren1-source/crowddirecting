@@ -85,7 +85,7 @@ export default function OGImage() {
             CrowdDirecting
           </div>
           <div style={{ color: 'rgba(255,255,255,0.6)', fontSize: '26px', maxWidth: '700px' }}>
-            The new creative format where audiences help direct what happens next.
+            Audiences don&apos;t just consume — they help direct what happens next.
           </div>
         </div>
 
