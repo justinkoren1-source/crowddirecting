@@ -38,7 +38,7 @@ export default function AnnouncementsPage() {
       {/* Header */}
       <section className="hero-bg relative overflow-hidden">
         <div className="relative max-w-7xl mx-auto px-5 pt-16 pb-14">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-blue-100 bg-blue-50 text-[#2D59EC] text-xs font-semibold uppercase tracking-widest mb-6">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-blue-100 bg-blue-50 text-[#315bff] text-xs font-semibold uppercase tracking-widest mb-6">
             <Megaphone size={11} />
             Official
           </div>
@@ -56,7 +56,7 @@ export default function AnnouncementsPage() {
           {announcements.map((ann) => (
             <div key={ann.title} className="rounded-2xl border border-black/6 bg-white p-7">
               <div className="flex items-start justify-between gap-4 mb-3">
-                <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-blue-50 text-[#2D59EC] border border-blue-100">
+                <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-blue-50 text-[#315bff] border border-blue-100">
                   {ann.tag}
                 </span>
                 <span className="text-gray-400 text-xs shrink-0">{ann.date}</span>
@@ -89,7 +89,7 @@ export default function AnnouncementsPage() {
           </div>
           <Link
             href="/#newsletter"
-            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-[#2D59EC] to-[#7c3aed] text-white font-semibold text-sm hover:opacity-90 transition-opacity shrink-0"
+            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-[#315bff] to-[#7b2cff] text-white font-semibold text-sm hover:opacity-90 transition-opacity shrink-0"
           >
             Subscribe
             <ArrowRight size={14} />

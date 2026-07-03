@@ -16,7 +16,7 @@ export default function NewsletterForm({ compact = false }: { compact?: boolean 
 
   if (status === 'success') {
     return (
-      <div className="flex items-center gap-3 text-[#2D59EC]">
+      <div className="flex items-center gap-3 text-[#315bff]">
         <div className="w-8 h-8 rounded-full bg-blue-50 flex items-center justify-center">
           <Mail size={16} />
         </div>
@@ -33,11 +33,11 @@ export default function NewsletterForm({ compact = false }: { compact?: boolean 
         onChange={(e) => setEmail(e.target.value)}
         placeholder="your@email.com"
         required
-        className="flex-1 bg-white border border-black/10 rounded-xl px-4 py-2.5 text-sm text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-[#2D59EC]/40 focus:ring-2 focus:ring-[#2D59EC]/10 transition-all"
+        className="flex-1 bg-white border border-black/10 rounded-xl px-4 py-2.5 text-sm text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-[#315bff]/40 focus:ring-2 focus:ring-[#315bff]/10 transition-all"
       />
       <button
         type="submit"
-        className="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-[#2D59EC] to-[#7c3aed] text-white text-sm font-semibold hover:opacity-90 transition-opacity whitespace-nowrap"
+        className="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-[#315bff] to-[#7b2cff] text-white text-sm font-semibold hover:opacity-90 transition-opacity whitespace-nowrap"
       >
         Subscribe
         <ArrowRight size={14} />

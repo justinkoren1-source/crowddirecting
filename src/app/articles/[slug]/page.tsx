@@ -66,7 +66,7 @@ export default async function ArticlePage({ params }: Props) {
           </Link>
 
           <div className="mb-5">
-            <span className="text-xs font-semibold px-3 py-1 rounded-full bg-blue-50 text-[#2D59EC] border border-blue-100">
+            <span className="text-xs font-semibold px-3 py-1 rounded-full bg-blue-50 text-[#315bff] border border-blue-100">
               {post.category}
             </span>
           </div>
@@ -90,7 +90,7 @@ export default async function ArticlePage({ params }: Props) {
 
       {/* Article Body */}
       <article className="max-w-2xl mx-auto px-5 py-12 bg-white">
-        <p className="text-gray-600 text-lg leading-relaxed mb-10 border-l-2 border-[#2D59EC]/40 pl-5 italic">
+        <p className="text-gray-600 text-lg leading-relaxed mb-10 border-l-2 border-[#315bff]/40 pl-5 italic">
           {post.excerpt}
         </p>
 
@@ -114,7 +114,7 @@ export default async function ArticlePage({ params }: Props) {
             href="https://multimuse.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-[#2D59EC] to-[#7c3aed] text-white font-semibold text-sm hover:opacity-90 transition-opacity"
+            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-[#315bff] to-[#7b2cff] text-white font-semibold text-sm hover:opacity-90 transition-opacity"
           >
             Visit MultiMuse
             <ArrowRight size={14} />

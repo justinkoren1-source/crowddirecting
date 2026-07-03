@@ -85,7 +85,7 @@ export default async function ArticleOGImage({
               fontWeight: 700,
               letterSpacing: '0.12em',
               textTransform: 'uppercase',
-              color: '#2D59EC',
+              color: '#315bff',
             }}
           >
             {category}
@@ -110,7 +110,7 @@ export default async function ArticleOGImage({
               width: '6px',
               height: '6px',
               borderRadius: '50%',
-              background: 'linear-gradient(135deg, #2D59EC, #7c3aed)',
+              background: 'linear-gradient(135deg, #315bff, #7b2cff)',
             }}
           />
           <span style={{ color: 'rgba(255,255,255,0.4)', fontSize: '15px', fontWeight: 500 }}>

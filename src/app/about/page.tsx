@@ -37,7 +37,7 @@ export default function AboutPage() {
       {/* Hero */}
       <section className="hero-bg relative overflow-hidden">
         <div className="relative max-w-7xl mx-auto px-5 pt-16 pb-20">
-          <p className="text-[#2D59EC] text-xs font-semibold uppercase tracking-widest mb-5">
+          <p className="text-[#315bff] text-xs font-semibold uppercase tracking-widest mb-5">
             The Concept
           </p>
           <h1 className="text-5xl md:text-6xl font-black text-gray-900 leading-[1.0] tracking-tight mb-6 max-w-3xl">
@@ -66,7 +66,7 @@ export default function AboutPage() {
             creative choices in real time. The creator remains the director — but the crowd
             becomes part of the creative energy.
           </p>
-          <blockquote className="border-l-2 border-[#2D59EC] pl-5 py-1 text-[#2D59EC] italic text-xl font-medium">
+          <blockquote className="border-l-2 border-[#315bff] pl-5 py-1 text-[#315bff] italic text-xl font-medium">
             &ldquo;The creator remains the director. But the crowd becomes part of the creative
             energy.&rdquo;
           </blockquote>
@@ -99,7 +99,7 @@ export default function AboutPage() {
 
           <div className="rounded-2xl border border-blue-100 bg-blue-50 p-7">
             <h2 className="text-gray-900 font-bold text-xl mb-5">
-              CrowdDirecting <span className="text-[#2D59EC]">is</span>…
+              CrowdDirecting <span className="text-[#315bff]">is</span>…
             </h2>
             <ul className="space-y-3">
               {[
@@ -111,7 +111,7 @@ export default function AboutPage() {
                 'The next evolution of creator-fan relationships',
               ].map((item) => (
                 <li key={item} className="flex items-center gap-3 text-gray-600 text-sm">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#2D59EC] shrink-0" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#315bff] shrink-0" />
                   {item}
                 </li>
               ))}
@@ -123,7 +123,7 @@ export default function AboutPage() {
       {/* Principles */}
       <section className="max-w-7xl mx-auto px-5 py-16">
         <div className="text-center mb-12">
-          <p className="text-[#2D59EC] text-xs font-semibold uppercase tracking-widest mb-3">
+          <p className="text-[#315bff] text-xs font-semibold uppercase tracking-widest mb-3">
             The Foundation
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
@@ -144,7 +144,7 @@ export default function AboutPage() {
 
       {/* About MultiMuse */}
       <section className="max-w-3xl mx-auto px-5 py-12 border-t border-black/5">
-        <p className="text-[#2D59EC] text-xs font-semibold uppercase tracking-widest mb-4">
+        <p className="text-[#315bff] text-xs font-semibold uppercase tracking-widest mb-4">
           The Platform
         </p>
         <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-5">
@@ -163,7 +163,7 @@ export default function AboutPage() {
             href="https://multimuse.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-[#2D59EC] to-[#7c3aed] text-white font-semibold text-sm hover:opacity-90 transition-opacity"
+            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-[#315bff] to-[#7b2cff] text-white font-semibold text-sm hover:opacity-90 transition-opacity"
           >
             Visit MultiMuse
             <ArrowRight size={14} />

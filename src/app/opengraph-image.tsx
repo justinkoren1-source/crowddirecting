@@ -76,7 +76,7 @@ export default function OGImage() {
               fontWeight: 900,
               lineHeight: 1.05,
               background:
-                'linear-gradient(135deg, #2D59EC 0%, #7c3aed 40%, #a855f7 70%, #ec4899 100%)',
+                'linear-gradient(135deg, #315bff 0%, #7b2cff 50%, #f037ff 100%)',
               backgroundClip: 'text',
               color: 'transparent',
               letterSpacing: '-2px',

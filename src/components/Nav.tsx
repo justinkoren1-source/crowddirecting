@@ -52,7 +52,7 @@ export default function Nav() {
             href="https://multimuse.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm px-4 py-1.5 rounded-full bg-gradient-to-r from-[#2D59EC] to-[#7c3aed] text-white font-semibold hover:opacity-90 transition-opacity"
+            className="text-sm px-4 py-1.5 rounded-full bg-gradient-to-r from-[#315bff] to-[#7b2cff] text-white font-semibold hover:opacity-90 transition-opacity"
           >
             Visit MultiMuse
           </a>
@@ -85,7 +85,7 @@ export default function Nav() {
             href="https://multimuse.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-2 text-sm px-4 py-2 rounded-full bg-gradient-to-r from-[#2D59EC] to-[#7c3aed] text-white font-semibold text-center"
+            className="mt-2 text-sm px-4 py-2 rounded-full bg-gradient-to-r from-[#315bff] to-[#7b2cff] text-white font-semibold text-center"
           >
             Visit MultiMuse
           </a>

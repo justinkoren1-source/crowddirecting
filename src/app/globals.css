@@ -1,10 +1,24 @@
 @import 'tailwindcss';
 
+:root {
+  --mm-blue: #315bff;
+  --mm-purple: #7b2cff;
+  --mm-pink: #f037ff;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+h1, h2, h3, .font-display {
+  font-family: 'Clash Display', 'Plus Jakarta Sans', sans-serif;
+}
+
 @theme {
   --color-bg-primary: #f7f7fb;
   --color-bg-card: #ffffff;
-  --color-accent-blue: #2D59EC;
-  --color-accent-purple: #7c3aed;
+  --color-accent-blue: #315bff;
+  --color-accent-purple: #7b2cff;
   --color-text-primary: #0a0a14;
   --color-text-muted: #6b7280;
 }
@@ -32,23 +46,23 @@ body {
   background: #f7f7fb;
 }
 ::-webkit-scrollbar-thumb {
-  background: rgba(45, 89, 236, 0.25);
+  background: rgba(49, 91, 255, 0.25);
   border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(45, 89, 236, 0.45);
+  background: rgba(49, 91, 255, 0.45);
 }
 
-/* Gradient text — MultiMuse blue anchor */
+/* Gradient text — MultiMuse locked brand gradient */
 .gradient-text {
-  background: linear-gradient(135deg, #2D59EC 0%, #7c3aed 40%, #a855f7 70%, #ec4899 100%);
+  background: linear-gradient(135deg, #315bff 0%, #7b2cff 50%, #f037ff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .gradient-text-violet {
-  background: linear-gradient(135deg, #2D59EC 0%, #7c3aed 50%, #8b5cf6 100%);
+  background: linear-gradient(135deg, #315bff 0%, #7b2cff 50%, #f037ff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -56,7 +70,7 @@ body {
 
 /* Borders */
 .glow-border {
-  border: 1px solid rgba(45, 89, 236, 0.1);
+  border: 1px solid rgba(49, 91, 255, 0.1);
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
 }
 
@@ -80,16 +94,16 @@ body {
 
 .card-hover:hover {
   transform: translateY(-4px);
-  box-shadow: 0 20px 50px rgba(45, 89, 236, 0.1);
-  border-color: rgba(45, 89, 236, 0.22);
+  box-shadow: 0 20px 50px rgba(49, 91, 255, 0.1);
+  border-color: rgba(49, 91, 255, 0.22);
 }
 
 /* Hero background */
 .hero-bg {
   background:
-    radial-gradient(ellipse 70% 50% at 15% 20%, rgba(45, 89, 236, 0.06) 0%, transparent 55%),
-    radial-gradient(ellipse 55% 40% at 85% 75%, rgba(124, 58, 237, 0.04) 0%, transparent 55%),
-    radial-gradient(ellipse 45% 55% at 50% 50%, rgba(45, 89, 236, 0.03) 0%, transparent 65%),
+    radial-gradient(ellipse 70% 50% at 15% 20%, rgba(49, 91, 255, 0.06) 0%, transparent 55%),
+    radial-gradient(ellipse 55% 40% at 85% 75%, rgba(123, 44, 255, 0.04) 0%, transparent 55%),
+    radial-gradient(ellipse 45% 55% at 50% 50%, rgba(49, 91, 255, 0.03) 0%, transparent 65%),
     #f7f7fb;
 }
 
@@ -127,13 +141,13 @@ body {
 }
 
 .article-prose blockquote {
-  border-left: 3px solid #2D59EC;
+  border-left: 3px solid #7b2cff;
   padding: 0.5rem 0 0.5rem 1.5rem;
   margin: 2rem 0;
   font-size: 1.2rem;
   font-style: italic;
-  color: #2D59EC;
-  background: rgba(45, 89, 236, 0.04);
+  color: #7b2cff;
+  background: rgba(49, 91, 255, 0.04);
   border-radius: 0 8px 8px 0;
 }
 
@@ -157,7 +171,7 @@ body {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #2D59EC, #7c3aed);
+  background: linear-gradient(135deg, #315bff, #7b2cff);
 }
 
 /* Animations */

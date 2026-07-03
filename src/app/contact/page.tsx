@@ -39,7 +39,7 @@ export default function ContactPage() {
       {/* Header */}
       <section className="hero-bg relative overflow-hidden">
         <div className="relative max-w-7xl mx-auto px-5 pt-16 pb-14">
-          <p className="text-[#2D59EC] text-xs font-semibold uppercase tracking-widest mb-5">
+          <p className="text-[#315bff] text-xs font-semibold uppercase tracking-widest mb-5">
             Get in Touch
           </p>
           <h1 className="text-4xl md:text-5xl font-black text-gray-900 mb-4">Contact</h1>
@@ -59,14 +59,14 @@ export default function ContactPage() {
               href={`mailto:${email}?subject=${encodeURIComponent(title)}`}
               className="group rounded-2xl border border-black/6 bg-white p-7 hover:border-blue-200 hover:shadow-sm transition-all card-hover block"
             >
-              <div className="w-10 h-10 rounded-xl bg-blue-50 flex items-center justify-center text-[#2D59EC] mb-5 group-hover:bg-blue-100 transition-colors">
+              <div className="w-10 h-10 rounded-xl bg-blue-50 flex items-center justify-center text-[#315bff] mb-5 group-hover:bg-blue-100 transition-colors">
                 <Icon size={18} />
               </div>
-              <h2 className="text-gray-900 font-bold text-lg mb-2 group-hover:text-[#2D59EC] transition-colors">
+              <h2 className="text-gray-900 font-bold text-lg mb-2 group-hover:text-[#315bff] transition-colors">
                 {title}
               </h2>
               <p className="text-gray-500 text-sm leading-relaxed mb-4">{desc}</p>
-              <span className="text-[#2D59EC] text-sm font-medium">{email}</span>
+              <span className="text-[#315bff] text-sm font-medium">{email}</span>
             </a>
           ))}
         </div>
@@ -77,7 +77,7 @@ export default function ContactPage() {
             Email us directly at{' '}
             <a
               href="mailto:hello@multimuse.com"
-              className="text-[#2D59EC] hover:opacity-80 underline underline-offset-2"
+              className="text-[#315bff] hover:opacity-80 underline underline-offset-2"
             >
               hello@multimuse.com
             </a>

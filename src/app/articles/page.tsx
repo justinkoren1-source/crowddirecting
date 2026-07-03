@@ -29,7 +29,7 @@ export default async function ArticlesPage({
       {/* Page Header */}
       <section className="bg-white border-b border-black/5">
         <div className="max-w-7xl mx-auto px-5 pt-14 pb-8">
-          <p className="text-[#2D59EC] text-xs font-semibold uppercase tracking-widest mb-4">
+          <p className="text-[#315bff] text-xs font-semibold uppercase tracking-widest mb-4">
             Publication
           </p>
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
@@ -58,7 +58,7 @@ export default async function ArticlesPage({
               href="/articles"
               className={`px-4 py-1.5 rounded-full text-sm transition-all whitespace-nowrap ${
                 !activeCategory
-                  ? 'bg-[#2D59EC] text-white font-semibold'
+                  ? 'bg-[#315bff] text-white font-semibold'
                   : 'border border-black/8 text-gray-500 hover:text-gray-800 hover:border-black/15 bg-white'
               }`}
             >
@@ -70,7 +70,7 @@ export default async function ArticlesPage({
                 href={`/articles?category=${encodeURIComponent(cat)}`}
                 className={`px-4 py-1.5 rounded-full text-sm transition-all whitespace-nowrap ${
                   activeCategory === cat
-                    ? 'bg-[#2D59EC] text-white font-semibold'
+                    ? 'bg-[#315bff] text-white font-semibold'
                     : 'border border-black/8 text-gray-500 hover:text-gray-800 hover:border-black/15 bg-white'
                 }`}
               >
@@ -110,11 +110,11 @@ export default async function ArticlesPage({
                   <span>·</span>
                   <span>{featured.readTime}</span>
                 </div>
-                <h2 className="text-xl md:text-2xl font-bold text-gray-900 leading-snug mb-3 group-hover:text-[#2D59EC] transition-colors">
+                <h2 className="text-xl md:text-2xl font-bold text-gray-900 leading-snug mb-3 group-hover:text-[#315bff] transition-colors">
                   {featured.title}
                 </h2>
                 <p className="text-gray-500 leading-relaxed mb-5 text-sm">{featured.excerpt}</p>
-                <div className="inline-flex items-center gap-2 text-[#2D59EC] font-semibold text-sm group-hover:gap-3 transition-all">
+                <div className="inline-flex items-center gap-2 text-[#315bff] font-semibold text-sm group-hover:gap-3 transition-all">
                   Read article <ArrowRight size={14} />
                 </div>
               </div>
@@ -136,7 +136,7 @@ export default async function ArticlesPage({
         {filtered.length === 0 ? (
           <div className="text-center py-20 text-gray-400">
             <p className="text-lg mb-2">No articles in this category yet.</p>
-            <Link href="/articles" className="text-[#2D59EC] text-sm hover:opacity-80">
+            <Link href="/articles" className="text-[#315bff] text-sm hover:opacity-80">
               View all articles →
             </Link>
           </div>

@@ -16,7 +16,7 @@ export default function Home() {
       {/* Hero */}
       <section className="hero-bg relative overflow-hidden min-h-[85vh] flex items-center">
         <div className="pointer-events-none absolute inset-0 overflow-hidden">
-          <div className="orb-float orb-pulse absolute top-1/3 left-1/5 w-[500px] h-[500px] rounded-full bg-[#2D59EC]/5 blur-3xl" />
+          <div className="orb-float orb-pulse absolute top-1/3 left-1/5 w-[500px] h-[500px] rounded-full bg-[#315bff]/5 blur-3xl" />
           <div
             className="orb-float orb-pulse absolute bottom-1/4 right-1/4 w-72 h-72 rounded-full bg-purple-500/4 blur-3xl"
             style={{ animationDelay: '3s' }}
@@ -51,7 +51,7 @@ export default function Home() {
           <div className="flex flex-wrap gap-4">
             <Link
               href="/articles"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-[#2D59EC] to-[#7c3aed] text-white font-semibold hover:opacity-90 transition-opacity text-sm"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-[#315bff] to-[#7b2cff] text-white font-semibold hover:opacity-90 transition-opacity text-sm"
             >
               Read the Latest
               <ArrowRight size={16} />
@@ -136,11 +136,11 @@ export default function Home() {
                 <span>·</span>
                 <span>{featured.readTime}</span>
               </div>
-              <h2 className="text-xl md:text-2xl font-bold text-gray-900 leading-snug mb-4 group-hover:text-[#2D59EC] transition-colors">
+              <h2 className="text-xl md:text-2xl font-bold text-gray-900 leading-snug mb-4 group-hover:text-[#315bff] transition-colors">
                 {featured.title}
               </h2>
               <p className="text-gray-500 leading-relaxed mb-6 text-sm">{featured.excerpt}</p>
-              <div className="inline-flex items-center gap-2 text-[#2D59EC] font-semibold text-sm group-hover:gap-3 transition-all">
+              <div className="inline-flex items-center gap-2 text-[#315bff] font-semibold text-sm group-hover:gap-3 transition-all">
                 Read article <ArrowRight size={14} />
               </div>
             </div>

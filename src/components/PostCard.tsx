@@ -20,7 +20,7 @@ export default function PostCard({ post }: { post: Post }) {
 
       {/* Content */}
       <div className="p-5">
-        <h3 className="text-gray-900 font-bold text-base leading-snug mb-2 group-hover:text-[#2D59EC] transition-colors line-clamp-2">
+        <h3 className="text-gray-900 font-bold text-base leading-snug mb-2 group-hover:text-[#315bff] transition-colors line-clamp-2">
           {post.title}
         </h3>
         <p className="text-gray-500 text-sm leading-relaxed mb-4 line-clamp-2">{post.excerpt}</p>
@@ -29,7 +29,7 @@ export default function PostCard({ post }: { post: Post }) {
             <Clock size={12} />
             <span>{post.readTime}</span>
           </div>
-          <div className="flex items-center gap-1 text-[#2D59EC] group-hover:gap-2 transition-all">
+          <div className="flex items-center gap-1 text-[#315bff] group-hover:gap-2 transition-all">
             <span className="text-xs font-medium">Read</span>
             <ArrowRight size={12} />
           </div>

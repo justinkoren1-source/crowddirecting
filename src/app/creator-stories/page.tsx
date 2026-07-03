@@ -27,7 +27,7 @@ export default function CreatorStoriesPage() {
       {/* Header */}
       <section className="hero-bg relative overflow-hidden">
         <div className="relative max-w-7xl mx-auto px-5 pt-16 pb-16">
-          <p className="text-[#2D59EC] text-xs font-semibold uppercase tracking-widest mb-5">
+          <p className="text-[#315bff] text-xs font-semibold uppercase tracking-widest mb-5">
             Creator Spotlights
           </p>
           <h1 className="text-4xl md:text-5xl font-black text-gray-900 mb-4 max-w-2xl">
@@ -51,7 +51,7 @@ export default function CreatorStoriesPage() {
               key={label}
               className="rounded-2xl border border-black/6 bg-white p-5 text-center hover:border-blue-200 transition-colors"
             >
-              <div className="w-10 h-10 rounded-xl bg-blue-50 flex items-center justify-center text-[#2D59EC] mx-auto mb-3">
+              <div className="w-10 h-10 rounded-xl bg-blue-50 flex items-center justify-center text-[#315bff] mx-auto mb-3">
                 <Icon size={18} />
               </div>
               <p className="text-gray-900 text-sm font-semibold mb-1">{label}</p>
@@ -67,8 +67,8 @@ export default function CreatorStoriesPage() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-8">
           {['Independent Filmmaker', 'Podcast Host', 'Visual Artist'].map((role) => (
             <div key={role} className="rounded-2xl border border-black/6 bg-white p-7">
-              <div className="w-16 h-16 rounded-full bg-gradient-to-br from-[#2D59EC]/20 to-purple-200 border border-black/6 mb-5" />
-              <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-blue-50 text-[#2D59EC] border border-blue-100 mb-3 inline-block">
+              <div className="w-16 h-16 rounded-full bg-gradient-to-br from-[#315bff]/20 to-purple-200 border border-black/6 mb-5" />
+              <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-blue-50 text-[#315bff] border border-blue-100 mb-3 inline-block">
                 {role}
               </span>
               <h3 className="text-gray-900 font-bold text-lg mb-2 mt-2">Coming Soon</h3>
@@ -90,7 +90,7 @@ export default function CreatorStoriesPage() {
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-[#2D59EC] to-[#7c3aed] text-white font-semibold text-sm hover:opacity-90 transition-opacity"
+            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-[#315bff] to-[#7b2cff] text-white font-semibold text-sm hover:opacity-90 transition-opacity"
           >
             Get in Touch
             <ArrowRight size={14} />
