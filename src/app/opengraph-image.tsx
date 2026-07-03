@@ -35,7 +35,7 @@ export default function OGImage() {
             height: '500px',
             borderRadius: '50%',
             background:
-              'radial-gradient(circle, rgba(45,89,236,0.15) 0%, transparent 70%)',
+              'radial-gradient(circle, rgba(49,91,255,0.15) 0%, transparent 70%)',
             display: 'flex',
           }}
         />
@@ -48,7 +48,7 @@ export default function OGImage() {
             height: '400px',
             borderRadius: '50%',
             background:
-              'radial-gradient(circle, rgba(124,58,237,0.1) 0%, transparent 70%)',
+              'radial-gradient(circle, rgba(123,44,255,0.1) 0%, transparent 70%)',
             display: 'flex',
           }}
         />

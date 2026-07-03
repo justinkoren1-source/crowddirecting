@@ -7,7 +7,7 @@ import { posts, categories, getFeaturedPost, gradientMap } from '@/lib/posts'
 export const metadata: Metadata = {
   title: 'Articles',
   description:
-    'Essays, creator stories, cultural commentary, and deep dives on CrowdDirecting and the future of audience-powered storytelling.',
+    'Essays, creator stories, cultural commentary, and deep dives on CrowdDirecting and audience-powered storytelling.',
 }
 
 export default async function ArticlesPage({
