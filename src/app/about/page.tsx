@@ -5,7 +5,7 @@ import { ArrowRight } from 'lucide-react'
 export const metadata: Metadata = {
   title: 'About CrowdDirecting',
   description:
-    'CrowdDirecting is a new creative format where audiences help guide what happens next.',
+    "CrowdDirecting is a new creative format where audiences don't just consume — they help direct what happens next.",
 }
 
 const principles = [
@@ -44,7 +44,8 @@ export default function AboutPage() {
             What is <span className="gradient-text">CrowdDirecting</span>?
           </h1>
           <p className="text-gray-500 text-lg md:text-xl leading-relaxed max-w-2xl">
-            A new creative format where audiences help guide what happens next.
+            CrowdDirecting is a new creative format where audiences don&apos;t just consume —
+            they help direct what happens next.
           </p>
         </div>
       </section>
@@ -62,7 +63,7 @@ export default function AboutPage() {
           </p>
           <p>
             Instead of content being a one-way broadcast, CrowdDirecting creates a feedback loop
-            between creators and their communities. Audiences vote, react, and help influence
+            between creators and their communities. Audiences vote, react, and help direct
             creative choices in real time. The creator remains the director — but the crowd
             becomes part of the creative energy.
           </p>
@@ -70,6 +71,14 @@ export default function AboutPage() {
             &ldquo;The creator remains the director. But the crowd becomes part of the creative
             energy.&rdquo;
           </blockquote>
+          <p>
+            On MultiMuse it works like this: <strong className="text-gray-900">you post a Muse — your
+            audience CrowdDirects it</strong>. A Muse is an interactive, bite-sized prompt: a decision
+            to influence, a challenge to join, a moment to shape.
+          </p>
+          <p>
+            Most platforms are a stage — MultiMuse is a studio. CrowdDirecting is what gets built there.
+          </p>
         </div>
       </section>
 

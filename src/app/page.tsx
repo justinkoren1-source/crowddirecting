@@ -35,17 +35,17 @@ export default function Home() {
             />
           </div>
 
-          <h1 className="text-5xl md:text-7xl lg:text-[86px] font-black leading-[0.93] tracking-tight mb-7 max-w-4xl">
+          <h1 className="text-5xl md:text-7xl lg:text-[80px] font-semibold leading-[0.98] tracking-tight mb-7 max-w-4xl">
+            <span className="text-gray-900">This isn&apos;t social media.</span>
+            <br />
+            <span className="text-gray-900">This is </span>
             <span className="gradient-text">CrowdDirecting</span>
-            <br />
-            <span className="text-gray-900">is the future</span>
-            <br />
-            <span className="text-gray-400">of storytelling.</span>
+            <span className="text-gray-900">.</span>
           </h1>
 
           <p className="text-gray-500 text-lg leading-relaxed max-w-xl mb-10">
-            The ideas, creator stories, and cultural commentary behind MultiMuse — the platform
-            where audiences help shape what happens next.
+            A new creative format where audiences don&apos;t just consume — they help direct what
+            happens next. Ideas, creator stories, and the culture forming around MultiMuse.
           </p>
 
           <div className="flex flex-wrap gap-4">
@@ -76,7 +76,7 @@ export default function Home() {
             {[
               {
                 title: 'Audience Participation',
-                text: 'Fans vote, react, and help influence creative choices in real time.',
+                text: 'Fans vote, react, and help direct creative choices in real time.',
               },
               {
                 title: 'Creator-Led',
