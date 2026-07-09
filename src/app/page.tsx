@@ -35,7 +35,7 @@ export default function Home() {
             />
           </div>
 
-          <h1 className="text-5xl md:text-7xl lg:text-[80px] font-semibold leading-[0.98] tracking-tight mb-7 max-w-4xl">
+          <h1 className="text-4xl md:text-6xl lg:text-[68px] font-bold leading-[1.05] tracking-[-0.01em] mb-7 max-w-5xl">
             <span className="text-gray-900">This isn&apos;t social media.</span>
             <br />
             <span className="text-gray-900">This is </span>
