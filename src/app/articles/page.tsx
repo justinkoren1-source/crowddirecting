@@ -5,6 +5,7 @@ import PostCard from '@/components/PostCard'
 import { posts, categories, getFeaturedPost, gradientMap } from '@/lib/posts'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/articles' },
   title: 'Articles',
   description:
     'Essays, creator stories, cultural commentary, and deep dives on CrowdDirecting and audience-powered storytelling.',

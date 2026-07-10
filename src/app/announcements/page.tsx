@@ -5,6 +5,7 @@ import PostCard from '@/components/PostCard'
 import { getPostsByCategory } from '@/lib/posts'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/announcements' },
   title: 'Announcements',
   description: 'Official announcements from the MultiMuse and CrowdDirecting team.',
 }

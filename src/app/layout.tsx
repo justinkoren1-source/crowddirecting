@@ -5,6 +5,14 @@ import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://crowddirecting.com'),
+  alternates: { canonical: '/' },
+  icons: {
+    icon: [
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/favicon-32.png', type: 'image/png', sizes: '32x32' },
+    ],
+    apple: '/apple-touch-icon.png',
+  },
   title: {
     default: 'CrowdDirecting — Where Audiences Help Direct What Happens Next',
     template: '%s | CrowdDirecting',

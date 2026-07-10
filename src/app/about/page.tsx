@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/about' },
   title: 'About CrowdDirecting',
   description:
     "CrowdDirecting is a new creative format where audiences don't just consume — they help direct what happens next.",

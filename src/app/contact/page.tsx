@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Mail, MessageSquare, Users, FileText } from 'lucide-react'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/contact' },
   title: 'Contact',
   description: 'Get in touch with the CrowdDirecting and MultiMuse team.',
 }

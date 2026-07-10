@@ -5,6 +5,7 @@ import PostCard from '@/components/PostCard'
 import { getPostsByCategory } from '@/lib/posts'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/creator-stories' },
   title: 'Creator Stories',
   description:
     'Stories from the filmmakers, influencers, artists, and builders inviting their audiences into the creative process.',
