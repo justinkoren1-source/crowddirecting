@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import SocialLinks from './SocialLinks'
 
 const footerLinks = [
   { href: '/', label: 'Home' },
@@ -57,25 +58,15 @@ export default function Footer() {
             <h4 className="text-gray-400 text-xs font-semibold uppercase tracking-widest mb-4">
               Connect
             </h4>
-            <ul className="space-y-2">
-              {[
-                { label: 'Visit MultiMuse', href: 'https://multimuse.com' },
-                { label: 'Twitter / X', href: '#' },
-                { label: 'Instagram', href: '#' },
-                { label: 'TikTok', href: '#' },
-              ].map((s) => (
-                <li key={s.label}>
-                  <a
-                    href={s.href}
-                    target={s.href.startsWith('http') ? '_blank' : undefined}
-                    rel="noopener noreferrer"
-                    className="text-gray-400 text-sm hover:text-gray-700 transition-colors"
-                  >
-                    {s.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
+            <a
+              href="https://multimuse.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 text-sm hover:text-gray-700 transition-colors"
+            >
+              Visit MultiMuse
+            </a>
+            <SocialLinks className="mt-4" />
           </div>
         </div>
 
