@@ -51,8 +51,32 @@ export default async function ArticlePage({ params }: Props) {
   const related = getLatestPosts(3).filter((p) => p.slug !== post.slug).slice(0, 3)
   const gradient = gradientMap[post.image] ?? 'from-violet-900/50 to-purple-900/40'
 
+  // Article structured data — helps Google treat these as articles (author,
+  // date, publisher) and gives AI assistants citable CrowdDirecting sources.
+  const articleJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: post.title,
+    description: post.excerpt,
+    author: { '@type': 'Person', name: post.author },
+    datePublished: new Date(post.date).toISOString().split('T')[0],
+    image: `https://crowddirecting.com/articles/${post.slug}/opengraph-image`,
+    mainEntityOfPage: `https://crowddirecting.com/articles/${post.slug}`,
+    publisher: {
+      '@type': 'Organization',
+      name: 'MultiMuse',
+      url: 'https://multimuse.com/',
+    },
+  }
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(articleJsonLd).replace(/</g, '\\u003c'),
+        }}
+      />
       {/* Hero */}
       <section className="relative overflow-hidden bg-white">
         <div className={`absolute inset-0 bg-gradient-to-b ${gradient} opacity-20`} />

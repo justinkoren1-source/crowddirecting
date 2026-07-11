@@ -42,6 +42,30 @@ export const metadata: Metadata = {
   },
 }
 
+// Structured data (JSON-LD) — identifies CrowdDirecting as a MultiMuse
+// publication so Google and AI assistants connect the two brands as one entity.
+const organizationJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  '@id': 'https://multimuse.com/#organization',
+  name: 'MultiMuse',
+  legalName: 'MultiMuse Media',
+  url: 'https://multimuse.com/',
+  email: 'hello@multimuse.com',
+  sameAs: ['https://crowddirecting.com/'],
+}
+
+const webSiteJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  '@id': 'https://crowddirecting.com/#website',
+  name: 'CrowdDirecting',
+  url: 'https://crowddirecting.com/',
+  description:
+    'CrowdDirecting is a new creative format where audiences don’t just consume — they help direct what happens next. A publication by MultiMuse.',
+  publisher: { '@id': 'https://multimuse.com/#organization' },
+}
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className="h-full">
@@ -58,6 +82,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body className="min-h-full flex flex-col bg-[#050508] text-white antialiased">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationJsonLd).replace(/</g, '\\u003c'),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(webSiteJsonLd).replace(/</g, '\\u003c'),
+          }}
+        />
         <Nav />
         <main className="flex-1 pt-16">{children}</main>
         <Footer />
