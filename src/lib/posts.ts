@@ -24,6 +24,121 @@ export const categories = [
 
 export const posts: Post[] = [
   {
+    slug: 'manifesto',
+    title: 'The MultiMuse Manifesto',
+    excerpt:
+      'We believe the audience was never meant to just watch. Here is what we are building, and why.',
+    category: 'Announcements',
+    author: 'Justin Koren, Founder',
+    date: 'July 24, 2026',
+    readTime: '3 min read',
+    featured: true,
+    image: 'purple-blue',
+    body: `
+<p>For twenty years, the internet has asked you to do one thing.</p>
+<p>Watch.</p>
+<p>Watch the video. Watch the launch. Watch other people build, decide, create, and win — from the other side of a screen, with nothing to do but tap a heart and scroll to the next thing.</p>
+<p>We think that is broken.</p>
+
+<h2>What we believe</h2>
+<p>We believe watching is not the same as taking part.</p>
+<p>We believe a like was never real participation. It was the smallest possible action, handed to you at the very end, after every decision that mattered had already been made.</p>
+<p>We believe people are not tired of creators. They are tired of feeling like everything is made <em>at</em> them.</p>
+<p>We believe the most valuable thing you can give someone is not more content to consume. It is a say in what happens next.</p>
+<p>We believe your audience is full of people who would show up, decide, and build with you — if you ever actually let them.</p>
+
+<h2>What we are building</h2>
+<p>MultiMuse is a place where the audience stops watching and starts directing.</p>
+<p>You post a real, open decision. Your people weigh in. They pick. And then you actually do the thing they chose.</p>
+<p>Not a poll. Not "feedback." The verdict is real — what the crowd directs, the creator makes.</p>
+<p>We call it CrowdDirecting.</p>
+<p>The creator still holds the pen. You decide what is open and what is not; you steer the whole thing. But the audience is finally in the room, shaping the parts they have only ever been allowed to react to.</p>
+
+<h2>Why it matters</h2>
+<p>Because there is a feeling almost no platform gives people anymore, and it is the one that actually matters:</p>
+<p><strong>"I played a part in that."</strong></p>
+<p>Not "I watched that." Not "I liked that." I <em>made</em> that happen, a little. I was counted.</p>
+<p>We want a world where millions of people can look at something real — a song, a shoot, a product, a moment — and know they helped direct it.</p>
+
+<h2>Who this is for</h2>
+<p>This is for the creators who have always felt their audience could be more than a number.</p>
+<p>And it is for everyone who has ever been stuck watching, wishing they could do something other than double-tap.</p>
+<p>We are building it in the open. It is early, it is rough in places, and we are figuring a lot of it out as we go. We are not going to fake momentum we do not have, or promise a date we cannot keep.</p>
+<p>But we are sure about the thing underneath all of it:</p>
+<p>People are done just watching.</p>
+<p>If that is you — follow the build. Let's make something you can point at and say you helped direct.</p>
+`,
+  },
+  {
+    slug: 'like-button-last-real-thing',
+    title: 'The Like Button Was the Last Real Thing Your Audience Got to Do',
+    excerpt:
+      'We built an entire internet where the most an audience could do was react — tap a heart, leave a comment, keep scrolling. But reacting was never the same as taking part, and people are starting to feel the difference.',
+    category: 'Culture',
+    author: 'The MultiMuse Team',
+    date: 'July 24, 2026',
+    readTime: '5 min read',
+    featured: false,
+    image: 'purple-blue',
+    body: `
+<p>Think about the last thing your audience actually got to <em>do</em>.</p>
+<p>Not watch. Not scroll past. Do.</p>
+<p>For most people, the honest answer is that they tapped a like.</p>
+<p>Maybe they left a comment. Maybe they shared it. Maybe, if they were really moved, they saved it for later.</p>
+<p>And that is the whole menu.</p>
+<p>We built an entire internet on that menu. Billions of people, thousands of platforms, an economy worth hundreds of billions of dollars — and the most meaningful thing any of it offers the audience is a reaction to something that was already finished before they ever saw it.</p>
+<p>The like button was supposed to be the start of participation.</p>
+<p>Instead it became the ceiling.</p>
+
+<h2>Reacting is not the same as taking part</h2>
+<p>Here is the quiet trick the last decade played on all of us. We started calling reactions "engagement," and we started treating engagement as if it were participation.</p>
+<p>They are not the same thing.</p>
+<p>A like is a reaction. A comment is a reaction. A share is a reaction. Every one of them happens <em>after</em> the decisions that actually mattered have already been made — after the video was shot, the caption was written, the product was designed, the ending was chosen.</p>
+<p>The audience arrives at the very end of the process, hands over a verdict, and leaves.</p>
+<p>We told them that was involvement. Deep down, everyone knows it is not.</p>
+
+<h2>The feeling everyone has but cannot name</h2>
+<p>Scroll long enough and you start to feel it — a low, background sense that everything is being made <em>at</em> you.</p>
+<p>Optimized at you. Polished at you. A/B tested at you. Repackaged, sponsored, and fed back to you by an algorithm that is very good at holding your attention and completely uninterested in your input.</p>
+<p>Some of it is entertaining. Some of it is useful. A lot of it is impressive.</p>
+<p>And still, it can feel strangely lonely — like sitting in a huge crowd watching a show that would be exactly the same whether you were there or not.</p>
+<p>AI is about to make that feeling louder. As more of the feed becomes generated, the thing people will quietly start craving is proof that they had any effect on it at all.</p>
+
+<h2>What changes when the audience gets to direct</h2>
+<p>Now imagine flipping the order.</p>
+<p>Instead of the audience reacting after something is posted, they help decide before it is made.</p>
+<ul>
+<li>They vote on where the next video gets shot.</li>
+<li>They pick which product actually gets built.</li>
+<li>They choose the ending.</li>
+<li>They shape the next challenge.</li>
+<li>They call the direction — and then they get to watch it happen.</li>
+</ul>
+<p>That is a different relationship entirely. The audience stops being a scoreboard and starts being part of the creative energy.</p>
+<p>We call it CrowdDirecting: a format where audiences do not just consume — they help direct what happens next.</p>
+<p>The part that makes it real, instead of just another poll, is the last step. The creator actually does the thing the crowd chose. The verdict is binding. And when you took part, you can point at the result and say the six words no like button has ever earned anyone:</p>
+<p><strong>"I played a part in that."</strong></p>
+
+<h2>No, the mob does not take over</h2>
+<p>The first worry people have is that this hands the wheel to the crowd and turns every creator into a puppet.</p>
+<p>It does not.</p>
+<p>The creator still holds the pen. They decide what is open for direction and what is not. They frame the choices. They set the boundaries of their own world.</p>
+<p>CrowdDirecting is not the audience replacing the creator. It is the audience being let into the room — invited to shape the parts the creator chooses to open up, while the creator stays the director of the whole thing.</p>
+<p>Think of it less like a democracy and more like a great host handing you something to do at the party, instead of sitting you in a corner to watch.</p>
+
+<h2>Why this is the next thing, not just a nicer thing</h2>
+<p>The last era of the internet was a race to make more content. The next one will be a race to make people feel less like spectators.</p>
+<p>Attention is not the scarce resource anymore. There is an infinite amount of stuff to look at. What is scarce is the feeling of mattering — of having touched something, changed something, been counted.</p>
+<p>The platforms that win the next decade will not be the ones that produce the most. They will be the ones that hand the most back.</p>
+
+<h2>We are building this in the open</h2>
+<p>MultiMuse is our attempt at that. It is early. We are building it out loud, sharing the wins and the ugly drafts, and figuring a lot of it out as we go.</p>
+<p>But the bet underneath it is simple, and we are fairly sure it is right: people are tired of watching other people decide.</p>
+<p>The like button gave your audience one thing to do.</p>
+<p>It is time to give them more.</p>
+`,
+  },
+  {
     slug: 'next-creator-trend-audience-control',
     title: "The Next Creator Trend Isn't AI. It's Audience Control.",
     excerpt:
