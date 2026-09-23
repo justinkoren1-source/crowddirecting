@@ -73,8 +73,8 @@ export default function AboutPage() {
             energy.&rdquo;
           </blockquote>
           <p>
-            On MultiMuse it works like this: <strong className="text-gray-900">you post a Muse — your
-            audience CrowdDirects it</strong>. A Muse is an interactive, bite-sized prompt: a decision
+            On MultiMuse it works like this: <strong className="text-gray-900">you post a CrowdCall — your
+            audience CrowdDirects it</strong>. A CrowdCall is an interactive, bite-sized prompt: a decision
             to influence, a challenge to join, a moment to shape.
           </p>
           <p>
