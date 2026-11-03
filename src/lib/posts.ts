@@ -210,7 +210,7 @@ export const posts: Post[] = [
   },
   {
     slug: 'crowdsource-content-ideas-from-audience',
-    title: 'How to Crowdsource Content Ideas From Your Audience (Without Losing Creative Control)',
+    title: 'How to Crowdsource Content Ideas From Your Audience',
     excerpt:
       'How to crowdsource content ideas from your audience the right way: ask with options, set boundaries, close the loop — and stay the director of your own work.',
     category: 'CrowdDirecting 101',
